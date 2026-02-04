@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator - It's over 9000</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: sans-serif;
+        }
+        .calc-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        input, select {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calc-container">
+        <input type="text" id="left" placeholder="Left value">
+        
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        
+        <input type="text" id="right" placeholder="Right value">
+        
+        <input type="submit" value="Try me!" onclick="calculate()">
+    </div>
+
+    <script>
+        function calculate() {
+            const leftVal = document.getElementById('left').value;
+            const rightVal = document.getElementById('right').value;
+            const op = document.getElementById('operator').value;
+
+            // ตรวจสอบว่าเป็นจำนวนเต็มบวกหรือไม่ (Positive integers >= 0)
+            if (!isPositiveInteger(leftVal) || !isPositiveInteger(rightVal)) {
+                alert('Error :(');
+                return;
+            }
+
+            const n1 = parseInt(leftVal);
+            const n2 = parseInt(rightVal);
+            let result;
+
+            // ตรวจสอบการหารหรือ Modulo ด้วยศูนย์
+            if ((op === '/' || op === '%') && n2 === 0) {
+                alert("It’s over 9000!");
+                console.log("It’s over 9000!");
+                return;
+            }
+
+            // คำนวณผลลัพธ์
+            switch (op) {
+                case '+': result = n1 + n2; break;
+                case '-': result = n1 - n2; break;
+                case '*': result = n1 * n2; break;
+                case '/': result = n1 / n2; break;
+                case '%': result = n1 % n2; break;
+            }
+
+            alert(result);
+            console.log(result);
+        }
+
+        function isPositiveInteger(val) {
+            // ตรวจสอบว่าเป็นตัวเลข และเป็นจำนวนเต็มบวก (>= 0)
+            return /^\d+$/.test(val);
+        }
+
+        // แจ้งเตือนทุกๆ 30 วินาที
+        setInterval(() => {
+            alert('Please, use me...');
+        }, 30000);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* ส่วนที่เป็นรูปภาพพื้นหลัง (Parallax) */
+/* ส่วนที่เป็นรูปภาพพื้นหลัง (Parallax) */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* ปรับจาก cover เป็น contain เพื่อให้เห็นรูปครบถ้วน */
+    background-size: contain;
+
+    /* ใส่สีพื้นหลังกันเหนียวไว้ เวลาใช้ contain แล้วรูปไม่เต็มจอ */
+    background-color: #000;
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* รูปที่ 1 */
+.bg-image-1 {
+    background-image: url('https://images.meme-arsenal.com/a99aa60c1211e96700d12a2e94d3b2c9.jpg');
+}
+
+/* รูปที่ 2 */
+.bg-image-2 {
+    background-image: url('https://i.ebayimg.com/images/g/788AAeSwn69oe8NO/s-l400.jpg');
+}
+
+/* ส่วนของแถบสีดำ (Black Block) */
+.black-block {
+    background-color: black;
+    padding: 100px 20px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.6;
+}
