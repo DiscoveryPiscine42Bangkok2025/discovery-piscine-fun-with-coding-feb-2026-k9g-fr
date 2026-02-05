@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            font-family: 'Segoe UI', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: rgba(15, 23, 42, 0.9) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #3b82f6;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        }
+
+        @media (min-width: 768px) {
+            .profile-img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+
+        .tech-tag {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid #3b82f6;
+            color: #60a5fa;
+            padding: 8px 16px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 5px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .card-experience {
+            background: #1e293b;
+            border: none;
+            border-left: 4px solid #3b82f6;
+            color: white;
+            height: 100%;
+        }
+
+        .btn-outline-light:hover {
+            color: #0f172a;
+        }
+
+        .contact-card {
+            background: #1e293b;
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+
+        .contact-card:hover {
+            background: #334155;
+            border-color: #3b82f6 !important;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .text-muted {
+            color: #94a3b8 !important;
+        }
+
+        @media (max-width: 576px) {
+            h1.display-4 {
+                font-size: 2.2rem;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#main-nav">
+
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="fa-solid fa-arrow-left me-2"></i>HUB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="d-flex align-items-center" style="min-height: 100vh;">
+        <div class="container text-center px-4">
+            <img src="kong.jpg" class="rounded-circle profile-img mb-4" alt="Profile">
+            <h1 class="display-4 fw-bold mb-2">Hello, I'm Thammarak Roekdee</h1>
+            <p class="lead text-primary fw-semibold mb-4">Information Techonology Student</p>
+            <p class="mx-auto" style="max-width: 600px; color: #94a3b8;">
+                "I am a dedicated Information Technology student at KMITL,
+                where I've developed a solid foundation in software logic and system design.
+                With a deep passion for problem-solving, I enjoy exploring backend architectures using Python and C++,
+                while constantly refining my skills in building modern, responsive web applications.
+                I thrive on challenges and am always eager to learn new technologies in the ever-evolving IT landscape.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" style="background: #111827;">
+        <div class="container px-4">
+            <div class="row g-5">
+                <div class="col-12 col-lg-6">
+                    <h2 class="mb-4 fw-bold"><i class="fa-solid fa-terminal me-2 text-primary"></i>Technical Stack</h2>
+                    <div class="mb-4">
+                        <h6 class="text-white-50 mb-3">Languages & Frameworks</h6>
+                        <div class="tech-tag">Python</div>
+                        <div class="tech-tag">Java</div>
+                        <div class="tech-tag">C / C++</div>
+                        <div class="tech-tag">JavaScript</div>
+                        <div class="tech-tag">HTML5 / CSS3</div>
+                        <div class="tech-tag">Bootstrap 5</div>
+                        <div class="tech-tag">Arduino / Embedded C</div>
+                    </div>
+                    <p class="text-muted" style="color: #94a3b8; line-height: 1.6;">
+                        As an <b>Information Technology student at KMITL</b>, I have built a versatile technical
+                        foundation.
+                        I am proficient in <b>object-oriented programming (OOP)</b> using Java and C++, and experienced
+                        in developing data-driven logic with <b>Python</b>. On the frontend, I focus on creating
+                        <b>responsive web interfaces</b> that ensure seamless user experiences across all devices.
+                        Additionally, my academic background in <b>Physical Computing</b> has equipped me with
+                        the skills to integrate hardware and software through the Arduino ecosystem.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <h2 class="mb-4 fw-bold"><i class="fa-solid fa-graduation-cap me-2 text-primary"></i>Experiences
+                    </h2>
+                    <div class="row g-3">
+                        <div class="card card-experience p-3 mb-3">
+                            <h5 class="mb-1">Global Time Converter Web App</h5>
+                            <small class="text-primary">JavaScript, HTML5, CSS3</small>
+                            <p class="mt-2 mb-0 small" style="color: #94a3b8;">
+                                Developed a functional web tool to calculate and convert time between different
+                                countries.
+                                Features a user-friendly interface for selecting time zones and handles real-time offset
+                                calculations accurately.
+                            </p>
+                        </div>
+                        <div class="card card-experience p-3 mb-3">
+                            <h5 class="mb-1">Java Bullet Hell Game</h5>
+                            <small class="text-primary">Java (OOP, Swing/AWT)</small>
+                            <p class="mt-2 mb-0 small" style="color: #94a3b8;">
+                                Developed a 2D Bullet Hell action game using pure Java. Implemented complex <b>collision
+                                    detection algorithms</b>,
+                                enemy movement patterns, and <b>object pooling</b> to handle hundreds of active
+                                projectiles on screen simultaneously.
+                            </p>
+                        </div>
+                        <div class="card card-experience p-3 mb-3">
+                            <h5 class="mb-1">Arduino Guessing Number Game</h5>
+                            <small class="text-primary">Physical Computing | C++ (Arduino)</small>
+                            <p class="mt-2 mb-0 small" style="color: #94a3b8;">
+                                Developed an interactive hardware-based game where players guess a randomly generated
+                                number.
+                                Integrated <b>I2C LCD Display</b> for UI, <b>Serial monitor</b> for input, and
+                                implemented
+                                randomization logic to provide real-time feedback (Higher/Lower).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container text-center px-4">
+            <h2 class="fw-bold mb-4">Connect With Me</h2>
+            <p class="text-muted mb-5">Feel free to reach out to me through any of these platforms.</p>
+
+            <div class="row justify-content-center g-3">
+                <div class="col-6 col-sm-auto">
+                    <a href="https://www.facebook.com/thammarak.roekdee" target="_blank" class="text-decoration-none d-block h-100">
+                        <div class="p-3 border border-secondary rounded-4 contact-card h-100">
+                            <i class="fa-brands fa-facebook fa-2x mb-2" style="color: #1877F2;"></i>
+                            <p class="mb-0 text-white small">Facebook</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-auto">
+                    <a href="https://www.instagram.com/k9g.fr/" target="_blank" class="text-decoration-none d-block h-100">
+                        <div class="p-3 border border-secondary rounded-4 contact-card h-100">
+                            <i class="fa-brands fa-instagram fa-2x mb-2" style="color: #E4405F;"></i>
+                            <p class="mb-0 text-white small">Instagram</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-auto">
+                    <a href="https://github.com/k9g-fr" target="_blank" class="text-decoration-none d-block h-100">
+                        <div class="p-3 border border-secondary rounded-4 contact-card h-100">
+                            <i class="fa-brands fa-github fa-2x mb-2" style="color: #ffffff;"></i>
+                            <p class="mb-0 text-white small">GitHub</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center border-top border-secondary">
+        <div class="container">
+            <small class="text-muted">&copy; Built with Bootstrap 5 by Kong & Asia.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

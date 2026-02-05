@@ -1,0 +1,27 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.btn-custom {
+    min-width: 200px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    transform: translateY(-5px);
+}
